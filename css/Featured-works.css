@@ -26,15 +26,40 @@
 {
     margin-top: 60px;
     color: white;
+  
+ 
 }
 .featured-item-overley-info a{
     display: inline-block;
     color: white;
     margin-top: 20px;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .5s ,opacity .5s;
+    transition-delay: .8s;
 }
 .featured-item-overley-info span{
-   font-size: 22px;
+   
+    font-size: 22px;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity .5s;
+    transition-delay: 0s;
+   
 }
+.featured-item-overley-info p{
+    font-size: 22px;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity .5s;
+    transition-delay: .4s;
+ }
 .featured-item-overley
 {
     position: absolute;
@@ -47,9 +72,14 @@
     opacity: 0;
     transition: 1s;
 }
-.Featured-item:hover .featured-item-overley
+.Featured-item:hover .featured-item-overley,
+.Featured-item:hover .featured-item-overley-info span,
+.Featured-item:hover .featured-item-overley-info p,
+.Featured-item:hover .featured-item-overley-info a
 {
-    visibility:visible;
-    opacity: 0.7;
+    top:0;
+    opacity: .7;
+    visibility: visible;
+  
 
 }
